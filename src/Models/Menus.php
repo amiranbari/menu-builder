@@ -18,4 +18,9 @@ class Menus extends Model
         return self::where('name', '=', $name)->first();
     }
 
+    public function items()
+    {
+        return MenuItems::where('menu', '=', $this->id);
+    }
+
 }
