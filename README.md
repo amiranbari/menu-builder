@@ -9,7 +9,7 @@ forked from https://github.com/lordmacu/wmenu
 1. Run
 
 ```php
-composer require malekfar/persian-menu-builder
+composer require malekfar/persian-laravel-menu
 ```
 
 **_Step 2 & 3 are optional if you are using laravel 5.5_**

@@ -35,3 +35,4 @@
     $("form select").addClass('form-control');
     $("form select").addClass('col-md-5');
 </script>
+

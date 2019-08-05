@@ -1,49 +1,35 @@
 {
-    "name": "malekfar/persian-menu-builder",
-    "description": "This package is a persian menu builder.",
-    "keywords": [
-        "spatie",
-        "laravel-menu"
-    ],
-    "license": "MIT",
+    "name": "malekfar/persian-laravel-menu",
+    "description": "drag and drop menu generator like wordpress for laravel 5",
+    "keywords": ["Laravel", "Menu", "Wordpress", "Builder"],
     "authors": [
+    	{
+            "name": "Mojtaba Malekfar",
+            "email": "mojtaba_malekfar@ymail.com",
+            "role": "Developer"
+        },
         {
-            "name": "mojtaba malekfar",
-            "email": "mojtaba_malekfar@ymail.com"
+            "name": "Cristian Garcia",
+            "email": "informacion@cristiangarcia.co",
+            "role" : "Original Developer"
         }
     ],
     "require": {
-        "php" : "^7.1",
-        "illuminate/auth": "~5.5.40|~5.6.0|~5.7.0|~5.8.0",
-        "illuminate/contracts": "~5.5.40|~5.6.0|~5.7.0|~5.8.0",
-        "illuminate/support": "~5.5.40|~5.6.0|~5.7.0|~5.8.0",
-        "spatie/menu": "^2.2.2"
-    },
-    "require-dev": {
-        "fzaninotto/faker": "^1.6",
-        "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
-        "phpunit/phpunit": "^7.0|^8.0"
+        "php": ">=5.4.0",
+        "illuminate/support": "5.*"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Menu\\Laravel\\": "src"
+          "Harimayco\\Menu\\": "src/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Spatie\\Menu\\Laravel\\Test\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Menu\\Laravel\\MenuServiceProvider"
+                "Harimayco\\Menu\\MenuServiceProvider"
             ],
             "aliases": {
-                "Menu": "Spatie\\Menu\\Laravel\\Facades\\Menu"
+                "Menu": "Harimayco\\Menu\\Facades\\Menu"
             }
         }
     }
