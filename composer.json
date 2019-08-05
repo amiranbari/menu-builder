@@ -5,7 +5,6 @@
         "spatie",
         "laravel-menu"
     ],
-    "homepage": "https://github.com/spatie/laravel-menu",
     "license": "MIT",
     "authors": [
         {
