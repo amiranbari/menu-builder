@@ -1,0 +1,13 @@
+{
+    "name": "persian/wmenu-builder-master",
+    "description": "This package is a persian menu builder.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mojtaba malekfar",
+            "email": "mojtaba_malekfar@ymail.com"
+        }
+    ],
+    "require": {}
+}
