@@ -66,6 +66,11 @@ $currentUrl = url()->current();
 																		<input id="custom-menu-item-name" name="label" type="text" class="regular-text menu-item-textbox input-with-default-title" title="Label menu">
 																	</label>
 																</p>
+                                                                <p id="menu-item-name-wrap">
+                                                                    <label class="howto" for="custom-menu-item-name"> <span>آیکون</span>&nbsp;
+                                                                        <input id="custom-menu-item-icon" name="icon" type="text" class="regular-text menu-item-textbox input-with-default-title" title="Icon menu">
+                                                                    </label>
+                                                                </p>
 																@if(!empty($roles))
 																<p id="menu-item-role_id-wrap">
 																	<label class="howto" for="custom-menu-item-name"> <span>Role</span>&nbsp;
@@ -162,6 +167,12 @@ $currentUrl = url()->current();
 																			<input type="text" id="url_menu_{{$m->id}}" class="widefat code edit-menu-item-url" id="url_menu_{{$m->id}}" value="{{$m->link}}">
 																		</label>
 																	</p>
+                                                                    <p class="field-css-url description description-wide">
+                                                                        <label for="edit-menu-item-icon-{{$m->id}}"> آیکون
+                                                                            <br>
+                                                                            <input type="text" id="icon_menu_{{$m->id}}" class="widefat code edit-menu-item-icon" id="icon_menu_{{$m->id}}" value="{{$m->icon}}">
+                                                                        </label>
+                                                                    </p>
 																	@if(!empty($roles))
 																	<p class="field-css-role description description-wide">
 																		<label for="edit-menu-item-role-{{$m->id}}"> Role

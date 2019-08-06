@@ -46,6 +46,7 @@ function addcustommenu() {
       labelmenu: $('#custom-menu-item-name').val(),
       linkmenu: $('#custom-menu-item-url').val(),
       rolemenu: $('#custom-menu-item-role').val(),
+      iconmenu: $('#custom-menu-item-icon').val(),
       idmenu: $('#idmenu').val()
     },
 
@@ -65,6 +66,7 @@ function updateitem(id = 0) {
     var label = $('#idlabelmenu_' + id).val();
     var clases = $('#clases_menu_' + id).val();
     var url = $('#url_menu_' + id).val();
+    var icon = $('#icon_menu_' + id).val();
     var role_id = 0;
     if ($('#role_menu_' + id).length) {
       role_id = $('#role_menu_' + id).val();
@@ -74,6 +76,7 @@ function updateitem(id = 0) {
       label: label,
       clases: clases,
       url: url,
+      icon: icon,
       role_id: role_id,
       id: id
     };
@@ -95,11 +98,15 @@ function updateitem(id = 0) {
       var role = $(this)
         .find('.edit-menu-item-role')
         .val();
+        var icon = $(this)
+            .find('.edit-menu-item-icon')
+            .val();
       arr_data.push({
         id: id,
         label: label,
         class: clases,
         link: url,
+        icon: icon,
         role_id: role
       });
     });

@@ -52,6 +52,7 @@ class MenuController extends Controller
                 $menuitem->label = $value['label'];
                 $menuitem->link = $value['link'];
                 $menuitem->class = $value['class'];
+                $menuitem->icon = $value['icon'];
                 if (config('menu.use_roles')) {
                     $menuitem->role_id = $value['role_id'] ? $value['role_id'] : 0 ;
                 }
@@ -62,6 +63,7 @@ class MenuController extends Controller
             $menuitem->label = request()->input("label");
             $menuitem->link = request()->input("url");
             $menuitem->class = request()->input("clases");
+            $menuitem->icon = request()->input("icon");
             if (config('menu.use_roles')) {
                 $menuitem->role_id = request()->input("role_id") ? request()->input("role_id") : 0 ;
             }
@@ -75,6 +77,7 @@ class MenuController extends Controller
         $menuitem = new MenuItems();
         $menuitem->label = request()->input("labelmenu");
         $menuitem->link = request()->input("linkmenu");
+        $menuitem->icon = request()->input("iconmenu");
         if (config('menu.use_roles')) {
             $menuitem->role_id = request()->input("rolemenu") ? request()->input("rolemenu")  : 0 ;
         }

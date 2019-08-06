@@ -20,7 +20,7 @@ class Menus extends Model
 
     public function items()
     {
-        return MenuItems::where('menu', '=', $this->id);
+        return MenuItems::where('menu', '=', $this->id)->get();
     }
 
 }
