@@ -23,8 +23,12 @@ class MenuController extends Controller
 
     public function deleteitemmenu()
     {
-        $menuitem = MenuItems::find(request()->input("id"));
-
+        if(!$id)
+            $menuitem = MenuItems::find(request()->input("id"));
+        else
+            $menuitem = MenuItems::find($id);
+        foreach(MenuItems::whereParent($menuitem->id)->get() as $menu)
+            $this->deleteitemmenu($menu->id);
         $menuitem->delete();
     }
 
