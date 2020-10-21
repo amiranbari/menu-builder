@@ -1,11 +1,11 @@
 {
-    "name": "malekfar/persian-laravel-menu",
+    "name": "amiranbari/persian-laravel-menu",
     "description": "drag and drop menu generator like wordpress for laravel 5",
     "keywords": ["Laravel", "Menu", "Wordpress", "Builder"],
     "authors": [
     	{
-            "name": "Mojtaba Malekfar",
-            "email": "mojtaba_malekfar@ymail.com",
+            "name": "Amir Anbari",
+            "email": "amir.developerwork@gmail.com",
             "role": "Developer"
         },
         {
