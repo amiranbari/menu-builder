@@ -1,7 +1,7 @@
 # Laravel Drag and Drop menu editor like wordpress
 [![Latest Stable Version](https://poser.pugx.org/harimayco/laravel-menu/v/stable)](https://packagist.org/packages/harimayco/laravel-menu) [![Latest Unstable Version](https://poser.pugx.org/harimayco/laravel-menu/v/unstable)](https://packagist.org/packages/harimayco/laravel-menu) [![Total Downloads](https://poser.pugx.org/harimayco/laravel-menu/downloads)](https://packagist.org/packages/harimayco/laravel-menu) [![Monthly Downloads](https://poser.pugx.org/harimayco/laravel-menu/d/monthly)](https://packagist.org/packages/harimayco/laravel-menu)
 
-forked from https://github.com/lordmacu/wmenu
+forked from https://github.com/Malekfar/menu-builder
 ![Laravel drag and drop menu](https://raw.githubusercontent.com/harimayco/wmenu-builder/master/screenshot.png)
 
 ### Installation
@@ -9,7 +9,7 @@ forked from https://github.com/lordmacu/wmenu
 1. Run
 
 ```php
-composer require malekfar/persian-laravel-menu
+composer require amiranbari/persian-laravel-menu:dev-master
 ```
 
 **_Step 2 & 3 are optional if you are using laravel 5.5_**
