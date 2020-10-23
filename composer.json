@@ -1,6 +1,6 @@
 {
     "name": "amiranbari/persian-laravel-menu",
-    "description": "drag and drop menu generator like wordpress for laravel 5",
+    "description": "drag and drop menu generator like wordpress for laravel 8",
     "keywords": ["Laravel", "Menu", "Wordpress", "Builder"],
     "authors": [
     	{
@@ -15,8 +15,8 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "7.*"
+        "php": ">= 7.3",
+        "illuminate/support": "8.*"
     },
     "autoload": {
         "psr-4": {
